@@ -1,5 +1,6 @@
 package com.shruti.firebaseall
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.shruti.firebaseall.databinding.ActivityMainBinding
@@ -12,6 +13,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.btnCrash.setOnClickListener {
             throw RuntimeException("Test crash")
+        }
+        binding.btnLogin.setOnClickListener {
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnRegister.setOnClickListener {
+            val intent = Intent(this,RegisterActivity::class.java)
+            startActivity(intent)
         }
     }
 }
