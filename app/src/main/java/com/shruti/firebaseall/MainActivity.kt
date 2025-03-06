@@ -22,5 +22,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,RegisterActivity::class.java)
             startActivity(intent)
         }
+        binding.btnReal.setOnClickListener {
+            val intent = Intent(this,RealTimeActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnFirestore.setOnClickListener {
+            val intent = Intent(this, FirestoreActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

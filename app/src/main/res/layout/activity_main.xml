@@ -21,6 +21,16 @@
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/btnRegister"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Real time Database"
+        android:id="@+id/btnReal"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FireStore Database"
+        android:id="@+id/btnFirestore"/>
 
 
 </LinearLayout>
