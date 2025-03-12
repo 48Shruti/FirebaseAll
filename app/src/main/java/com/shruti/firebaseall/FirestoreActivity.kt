@@ -66,6 +66,8 @@ class FirestoreActivity : AppCompatActivity(), StudentAdapter.studentInterface {
                                 item.removeAt(index)
                         }
                     }
+
+                    else -> {}
                 }
             }
         }
@@ -96,7 +98,7 @@ class FirestoreActivity : AppCompatActivity(), StudentAdapter.studentInterface {
         }
     }
 
-    private fun convertObject(snapshot: QueryDocumentSnapshot) : StudentDataClass{
+    private fun convertObject(snapshot: QueryDocumentSnapshot) : StudentDataClass? {
         val studentModel : StudentDataClass = snapshot.toObject(StudentDataClass::class.java)
         studentModel?.id = snapshot.id ?: ""
         return studentModel
