@@ -30,5 +30,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FirestoreActivity::class.java)
             startActivity(intent)
         }
+        binding.btnFCM.setOnClickListener {
+            val intent = Intent(this, FcmActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

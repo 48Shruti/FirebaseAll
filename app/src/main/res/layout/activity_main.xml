@@ -31,6 +31,11 @@
         android:layout_height="wrap_content"
         android:text="FireStore Database"
         android:id="@+id/btnFirestore"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cloud Messaging"
+        android:id="@+id/btnFCM"/>
 
 
 </LinearLayout>
