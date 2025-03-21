@@ -34,5 +34,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FcmActivity::class.java)
             startActivity(intent)
         }
+        binding.btnPay.setOnClickListener {
+            val intent = Intent(this, PaymentActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
